@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = ({ author = "", comment = "", id, rate = 0 }) => {
+const Form = ({ author = "", callback, comment = "", id, rate = 0 }) => {
   const [authorInput, setAuthorInput] = useState(author);
   const [commentInput, setCommentInput] = useState(comment);
   const [rateInput, setRateInput] = useState(rate);
@@ -22,6 +22,10 @@ const Form = ({ author = "", comment = "", id, rate = 0 }) => {
       id,
       rate: Number(rateInput),
     };
+
+    if (id) {
+      callback();
+    }
   };
 
   return (
