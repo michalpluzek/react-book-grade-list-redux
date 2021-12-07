@@ -13,7 +13,6 @@ const App = () => {
     <Provider store={store}>
       <div>
         <Form />
-        <p>Redux</p>
         <List />
       </div>
     </Provider>

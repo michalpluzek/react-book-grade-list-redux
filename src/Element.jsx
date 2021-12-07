@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import Form from "./Form";
 
 import { deleteRate } from "./actions/appActions";
 
-const Element = ({ author, comment, id, deleteRate, rate }) => {
+const Element = ({ author, comment, id, rate }) => {
   const [isVisibleForm, setIsVisibleForm] = useState(false);
+
+  const dispatch = useDispatch();
 
   const toggleElements = () => setIsVisibleForm((prev) => !prev);
 
-  const deleteElement = () => deleteRate(id);
+  const deleteElement = () => dispatch(deleteRate(id));
 
   const formOrButtonElement = isVisibleForm ? (
     <Form
@@ -37,8 +39,4 @@ const Element = ({ author, comment, id, deleteRate, rate }) => {
   );
 };
 
-const connectActionsToProps = { deleteRate };
-
-const ElementConsumer = connect(null, connectActionsToProps)(Element);
-
-export default ElementConsumer;
+export default Element;
