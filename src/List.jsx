@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Element from "./Element";
 
@@ -10,4 +11,10 @@ const List = ({ rates }) => {
   return <ul>{ratesElements}</ul>;
 };
 
-export default List;
+const connectReduxStateToProps = (store) => ({
+  rates: store.rates,
+});
+
+const ListConsumer = connect(connectReduxStateToProps)(List);
+
+export default ListConsumer;
