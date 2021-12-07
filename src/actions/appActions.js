@@ -2,24 +2,24 @@ export const ADD = "ADD";
 export const DELETE = "DELETE";
 export const EDIT = "EDIT";
 
-const addRate = ({ author, comment, rate }) => ({
+export const addRate = ({ author, comment, rate }) => ({
   type: ADD,
   payload: {
     author,
     comment,
-    id: Math.floor(Math.random * 1000),
+    id: Math.floor(Math.random() * 1000),
     rate,
   },
 });
 
-const deleteRate = (id) => ({
+export const deleteRate = (id) => ({
   type: DELETE,
   payload: {
     id,
   },
 });
 
-const editRate = ({ id, author, comment, rate }) => ({
+export const editRate = ({ id, author, comment, rate }) => ({
   type: EDIT,
   payload: {
     author,
