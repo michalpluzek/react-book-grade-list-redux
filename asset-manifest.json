@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-book-grade-list-redux/static/css/main.bab0b925.chunk.css",
+    "main.js": "/react-book-grade-list-redux/static/js/main.a232b10e.chunk.js",
+    "main.js.map": "/react-book-grade-list-redux/static/js/main.a232b10e.chunk.js.map",
+    "runtime-main.js": "/react-book-grade-list-redux/static/js/runtime-main.edd2f734.js",
+    "runtime-main.js.map": "/react-book-grade-list-redux/static/js/runtime-main.edd2f734.js.map",
+    "static/js/2.3d7dfbda.chunk.js": "/react-book-grade-list-redux/static/js/2.3d7dfbda.chunk.js",
+    "static/js/2.3d7dfbda.chunk.js.map": "/react-book-grade-list-redux/static/js/2.3d7dfbda.chunk.js.map",
+    "index.html": "/react-book-grade-list-redux/index.html",
+    "static/css/main.bab0b925.chunk.css.map": "/react-book-grade-list-redux/static/css/main.bab0b925.chunk.css.map",
+    "static/js/2.3d7dfbda.chunk.js.LICENSE.txt": "/react-book-grade-list-redux/static/js/2.3d7dfbda.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edd2f734.js",
+    "static/js/2.3d7dfbda.chunk.js",
+    "static/css/main.bab0b925.chunk.css",
+    "static/js/main.a232b10e.chunk.js"
+  ]
+}
